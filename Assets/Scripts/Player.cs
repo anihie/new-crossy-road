@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKey(KeyCode.W))
+        if(Input.GetKeyDown(KeyCode.W))
         {
             animator.SetTrigger("hop");
         }

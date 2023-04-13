@@ -24,7 +24,7 @@ public class TerrainGenerator : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.W))
         {
             SpawnTerrain(false);
         }
