@@ -33,7 +33,9 @@ public class TerrainGenerator : MonoBehaviour
 
     public void SpawnTerrain(bool isStart, Vector3 playerPos)
     {
-        if(currentPosition.x - playerPos.x < minDistanceFromPlayer)
+    
+
+        if((currentPosition.x - playerPos.x < minDistanceFromPlayer) || (isStart))
         {
             int whichTerrain = Random.Range(0, terrainDatas.Count);
             int terrainInSuccession = Random.Range(1, terrainDatas[whichTerrain].maxInSuccession);
