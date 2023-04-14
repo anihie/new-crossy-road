@@ -47,6 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14a862be68df9451caa77ccb8c90ce51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  terrainGenerator: {fileID: 0}
 --- !u!65 &1939900783
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -106,7 +107,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5738051166484066261}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.7611513, y: 29.852089, z: -40.23994}
+  m_LocalPosition: {x: 5.75, y: 0.5, z: -0.28}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
