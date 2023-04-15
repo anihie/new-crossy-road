@@ -1310,6 +1310,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road
       objectReference: {fileID: 0}
+    - target: {fileID: 5710431217088049050, guid: c44e681e6672a4ef6884ae2c93bd6b17, type: 3}
+      propertyPath: vehicle
+      value: 
+      objectReference: {fileID: 236635796}
+    - target: {fileID: 5710431217088049050, guid: c44e681e6672a4ef6884ae2c93bd6b17, type: 3}
+      propertyPath: spawnPos
+      value: 
+      objectReference: {fileID: 1902497743}
     - target: {fileID: 7541581429165932103, guid: c44e681e6672a4ef6884ae2c93bd6b17, type: 3}
       propertyPath: m_RootOrder
       value: 12
