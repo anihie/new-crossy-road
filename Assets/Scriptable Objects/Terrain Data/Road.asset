@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: Road
   m_EditorClassIdentifier: 
   terrain: {fileID: 2261242751564585150, guid: c44e681e6672a4ef6884ae2c93bd6b17, type: 3}
+  possibleTerrain:
+  - {fileID: 2261242751564585150, guid: c44e681e6672a4ef6884ae2c93bd6b17, type: 3}
   maxInSuccession: 3
