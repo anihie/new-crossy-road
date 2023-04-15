@@ -6,6 +6,7 @@ public class CameraFollowPlayer : MonoBehaviour
 {
     [SerializeField] private GameObject player;
     [SerializeField] private Vector3 offset;
+    [SerializeField] private float smoothness;
 
     private void Start()
     {
@@ -14,6 +15,6 @@ public class CameraFollowPlayer : MonoBehaviour
 
     private void Update()
     {
-        transform.position = player.transform.position + offset;
+        transform.position = Vector3.Lerp(transform.position, player.transform.position + offset, smoothness);
     }
 }
