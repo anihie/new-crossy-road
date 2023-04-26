@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1902497742}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.5, z: -0.5}
+  m_LocalPosition: {x: 0, y: 0.5, z: -0.49657}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -142,7 +142,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a107148e5e9244a880662e1d7b89986, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vehicle: {fileID: 5123228689164125368, guid: fade26f8bb6d44fd9b599eb0216501e3, type: 3}
+  vehicle: {fileID: 1031640362569924675, guid: 68151a3bbaecd434789b1824898dbc44, type: 3}
   spawnPos: {fileID: 1902497743}
   minSeparationTime: 3
   maxSeparationTime: 5
+  isRightSide: 0
