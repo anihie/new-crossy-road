@@ -7,9 +7,12 @@ public class VehicleSpawner : MonoBehaviour
 
     [SerializeField] private GameObject vehicle;
     [SerializeField] private Transform spawnPos;
+    [SerializeField] private Transform carHolder;
     [SerializeField] private float minSeparationTime;
     [SerializeField] private float maxSeparationTime;
     [SerializeField] private bool isRightSide;
+
+    private List<GameObject> currentCars = new List<GameObject>();
 
     private void Start()
     {
@@ -25,12 +28,18 @@ public class VehicleSpawner : MonoBehaviour
         {
             yield return new WaitForSeconds(Random.Range(minSeparationTime, maxSeparationTime));
             GameObject go = Instantiate(vehicle, spawnPos.position, Quaternion.identity);
-            go.transform.rotation = Quaternion.EulerRotation(0, spawnPos.rotation.y, 0);
-            // if(!isRightSide)
-            // {
-            //     go.transform.Rotate(new Vector3 (0, 180, 0));
-            // }
+            
+            if(!isRightSide)
+            {
+                go.transform.Rotate(new Vector3 (0, 360, 0));
+            }
         }
+
+        for (int i = 0; i < terrainInSuccession; i++)
+            {
+                GameObject car = Instantiate(carHolder);
+                currentCars.Add(car);
+            }
     }
         
 

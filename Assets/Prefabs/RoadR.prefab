@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 936684493325626765}
   - component: {fileID: 5710431217088049050}
   m_Layer: 0
-  m_Name: Road
+  m_Name: RoadR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -146,4 +146,4 @@ MonoBehaviour:
   spawnPos: {fileID: 1902497743}
   minSeparationTime: 3
   maxSeparationTime: 5
-  isRightSide: 0
+  isRightSide: 1
